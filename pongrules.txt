@@ -1,0 +1,8 @@
+Pong rules:
+The paddles cannot cross the centerline
+if the center block goes out of the playing field then person on the opposite side of the table gets a point.
+the paddles cannot exit the screen
+the center block goes to the person who wins a point after a point is won
+the center block heads to the right paddle on the first round
+The winner is the first to 10 points
+
