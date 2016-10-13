@@ -1,4 +1,4 @@
-int h=950;
+float h=width/2 ;
 int g=0;
 void drawp1rectangle(){
    rect(g,h,50,200);
