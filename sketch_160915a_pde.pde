@@ -1,6 +1,7 @@
 
 void setup(){
-  size(3400,1900);
+  //fullScreen();
+ size(1280,720);
 }
 
 void draw(){
@@ -17,7 +18,7 @@ void draw(){
   p1rectanglelimits();
   balllimits();
   points();
-  bounce();
+ // bounce();
 }
 
 class P1paddle{
@@ -29,8 +30,8 @@ class Pong_Ball{
 class points{
 }
 void centerline(){
-  for( int centerl = 0; centerl < 1900; centerl+=100){
-  rect(.5*width,centerl,10,60);
+  for( int centerl = 0; centerl < 1280; centerl+=50){
+  rect(.5*width,centerl,10,27);
 }
 }
 //TO DO:

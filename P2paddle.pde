@@ -1,35 +1,35 @@
-float paddlexloc= 950;
-float paddleyloc= 3350;
+float paddlexloc= 310;
+float paddleyloc= 1260;
 void drawp2rectangle(){
-  rect(paddleyloc,paddlexloc,50,200);
+  rect(paddleyloc,paddlexloc,20,100);
 }
 void movep2rectangle(){
    if(keyPressed&&key == '8'){
-   paddlexloc-=10;
+   paddlexloc-=5;
  }
  
  if(keyPressed&&key == '5'){
-   paddlexloc+=10;
+   paddlexloc+=5;
   
  }
  if(keyPressed&&key == '4'){
-   paddleyloc-=10;
+   paddleyloc-=5;
  }
  if(keyPressed&&key == '6'){
-   paddleyloc+=10;
+   paddleyloc+=5;
  }
 }
 void p2rectanglelimits(){
   if(paddlexloc< 0){
     paddlexloc=0; 
   }
-  if(paddlexloc>1700){
-    paddlexloc=1700;
+  if(paddlexloc>620){
+    paddlexloc=620;
   }
-  if(paddleyloc>3350){
-    paddleyloc=3350; 
+  if(paddleyloc>1260){
+    paddleyloc=1260; 
   }
-  if (paddleyloc<1720){
-    paddleyloc=1720;
+  if (paddleyloc<660){
+    paddleyloc=660;
   }
 }
