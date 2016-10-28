@@ -1,4 +1,4 @@
-float h= 310;
+int h= 310;
 int g=0;
 void drawp1rectangle(){
    rect(g,h,20,100);
@@ -36,3 +36,12 @@ void p1rectanglelimits(){
     h=0;
   }
 }
+void p1bounce(){
+ if (ballycord <= h+100){
+ if (ballycord >= h){ 
+   if (ballxcord == g+20){
+  balldirection = -balldirection;
+  }
+  }
+}
+ }

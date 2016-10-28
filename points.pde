@@ -1,7 +1,7 @@
    void points(){
      
-     String o = "9";
-     String p = "2";
+     String o = "0";
+     String p = "0";
      fill(255);
      textSize(80);
     //craete a counter so that the text o is only displayed once

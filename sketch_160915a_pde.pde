@@ -1,6 +1,5 @@
 
 void setup(){
-  //fullScreen();
  size(1280,720);
 }
 
@@ -18,7 +17,8 @@ void draw(){
   p1rectanglelimits();
   balllimits();
   points();
- // bounce();
+  p2bounce();
+  p1bounce();
 }
 
 class P1paddle{
@@ -37,4 +37,4 @@ void centerline(){
 //TO DO:
 //TEXT for points
 //TEXT for game over + Winner
-//ball bounce off paddles
+//ball bounce off paddles at angles too

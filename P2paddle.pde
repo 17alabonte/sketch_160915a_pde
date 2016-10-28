@@ -1,35 +1,47 @@
-float paddlexloc= 310;
-float paddleyloc= 1260;
+int paddleyloc= 310;
+int paddlexloc= 1260;
 void drawp2rectangle(){
-  rect(paddleyloc,paddlexloc,20,100);
+  rect(paddlexloc,paddleyloc,20,100);
 }
+//rect(1260,310,20,100)
 void movep2rectangle(){
    if(keyPressed&&key == '8'){
-   paddlexloc-=5;
+   paddleyloc-=5;
  }
  
  if(keyPressed&&key == '5'){
-   paddlexloc+=5;
+   paddleyloc+=5;
   
  }
  if(keyPressed&&key == '4'){
-   paddleyloc-=5;
+   paddlexloc-=5;
  }
  if(keyPressed&&key == '6'){
-   paddleyloc+=5;
+   paddlexloc+=5;
  }
 }
 void p2rectanglelimits(){
-  if(paddlexloc< 0){
-    paddlexloc=0; 
+  if(paddleyloc< 0){
+    paddleyloc=0; 
   }
-  if(paddlexloc>620){
-    paddlexloc=620;
+  if(paddleyloc>620){
+    paddleyloc=620;
   }
-  if(paddleyloc>1260){
-    paddleyloc=1260; 
+  if(paddlexloc>1260){
+    paddlexloc=1260; 
   }
-  if (paddleyloc<660){
-    paddleyloc=660;
+  if (paddlexloc<660){
+    paddlexloc=660;
   }
 }
+ void p2bounce(){
+
+  if (ballycord <= paddleyloc+100){
+   if (ballycord >= paddleyloc){ 
+     if (ballxcord == paddlexloc-20){
+       
+   balldirection = -balldirection;
+     }
+   }
+}
+ }

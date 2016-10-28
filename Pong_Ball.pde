@@ -1,9 +1,10 @@
-float ballxcord = 635;
-float ballycord = random(720);
-float balldirection = -5;
+int ballxcord = 635;
+int ballycord = 310;
+int balldirection = 1;
  void drawpongball(){
    fill(255,136,20);
-   rect(ballxcord,ballycord,20,20);
+ rect(ballxcord,ballycord,20,20);
+   
    
 }
 void movepongball(){
@@ -14,13 +15,8 @@ void movepongball(){
      balldirection=-balldirection;
    }
    if(ballycord<0){
-     balldirection=-balldirection;
-   }  
+s   }  
  }
- //void bounce(){
- //if (paddlexloc == ballxcord){
- //  if (paddleyloc== ballycord){
- //  balldirection = -balldirection;
- //  }
- //}
- //}
+
+
+ 
