@@ -4,7 +4,6 @@
      String p = "0";
      fill(255);
      textSize(80);
-    //craete a counter so that the text o is only displayed once
    text((o),width*.75,90);
    String [] p1points ={
      "0","1","2","3","4","5","6","7","8","9","10"

@@ -1,6 +1,7 @@
 int ballxcord = 635;
-int ballycord = 310;
-int balldirection = 1;
+int ballycord = 360;
+int ballxdirection = 1;
+int ballydirection = 0;
  void drawpongball(){
    fill(255,136,20);
  rect(ballxcord,ballycord,20,20);
@@ -8,14 +9,16 @@ int balldirection = 1;
    
 }
 void movepongball(){
-   ballxcord = ballxcord + balldirection;
+   ballxcord = ballxcord + ballxdirection;
+   ballycord = ballycord + ballydirection;
   }
  void balllimits(){
    if(ballycord>700){
-     balldirection=-balldirection;
+     ballydirection=-ballydirection;
    }
    if(ballycord<0){
-s   }  
+     ballydirection=-ballydirection;
+   }  
  }
 
 

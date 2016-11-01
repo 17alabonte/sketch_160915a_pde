@@ -6,18 +6,18 @@ void drawp2rectangle(){
 //rect(1260,310,20,100)
 void movep2rectangle(){
    if(keyPressed&&key == '8'){
-   paddleyloc-=5;
+   paddleyloc-=1;
  }
  
  if(keyPressed&&key == '5'){
-   paddleyloc+=5;
+   paddleyloc+=1;
   
  }
  if(keyPressed&&key == '4'){
-   paddlexloc-=5;
+   paddlexloc-=1;
  }
  if(keyPressed&&key == '6'){
-   paddlexloc+=5;
+   paddlexloc+=1;
  }
 }
 void p2rectanglelimits(){
@@ -34,13 +34,38 @@ void p2rectanglelimits(){
     paddlexloc=660;
   }
 }
- void p2bounce(){
+ void p2bouncestraight(){
 
-  if (ballycord <= paddleyloc+100){
+ 
+   if (ballycord >= paddleyloc+35){ 
+      if (ballycord <= paddleyloc+65){
+     if (ballxcord == paddlexloc-20){
+       
+   ballxdirection = -ballxdirection;
+     }
+   }
+}
+ }
+  void p2bounceup(){
+
+  if (ballycord <= paddleyloc+35){
    if (ballycord >= paddleyloc){ 
      if (ballxcord == paddlexloc-20){
        
-   balldirection = -balldirection;
+   ballxdirection = -ballxdirection;
+   ballydirection =ballydirection -1;
+     }
+   }
+}
+ }
+  void p2bouncedown(){
+
+  if (ballycord <= paddleyloc+100){
+   if (ballycord >= paddleyloc+65){ 
+     if (ballxcord == paddlexloc-20){
+       
+   ballxdirection = -ballxdirection;
+   ballydirection = ballydirection +1;
      }
    }
 }

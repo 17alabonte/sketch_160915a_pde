@@ -17,8 +17,12 @@ void draw(){
   p1rectanglelimits();
   balllimits();
   points();
-  p2bounce();
-  p1bounce();
+  p2bouncestraight();
+  p2bounceup();
+  p2bouncedown();
+  p1bouncestraight();
+  p1bouncedown();
+  p1bounceup();
 }
 
 class P1paddle{

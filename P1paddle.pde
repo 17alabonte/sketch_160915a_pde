@@ -6,17 +6,17 @@ void drawp1rectangle(){
 void movep1rectangle(){
 
    if(keyPressed&&key == 'w'){
-   h-=5;
+   h-=1;
  }
  
  if(keyPressed&&key == 's'){
-   h+=5;
+   h+=1;
  }
  if(keyPressed&&key == 'a'){
-   g-=5;
+   g-=1;
  }
  if(keyPressed&&key == 'd'){
-   g+=5;
+   g+=1;
  }
 }
 void p1rectanglelimits(){
@@ -36,11 +36,35 @@ void p1rectanglelimits(){
     h=0;
   }
 }
-void p1bounce(){
- if (ballycord <= h+100){
- if (ballycord >= h){ 
+void p1bouncestraight(){
+ if (ballycord >= h+35){
+ if (ballycord <= h+65){ 
    if (ballxcord == g+20){
-  balldirection = -balldirection;
+  ballxdirection = -ballxdirection;
+  
+  }
+  }
+}
+ }
+ void p1bouncedown(){
+ if (ballycord >= h+65){
+ if (ballycord <= h+100){ 
+   if (ballxcord == g+20){
+    ballxdirection = -ballxdirection;
+    ballydirection = ballydirection +1;
+    
+ 
+  }
+  }
+}
+
+ }
+  void p1bounceup(){
+ if (ballycord >= h){
+ if (ballycord <= h+35){ 
+   if (ballxcord == g+20){
+  ballxdirection = -ballxdirection;
+  ballydirection =ballydirection -1;
   }
   }
 }
