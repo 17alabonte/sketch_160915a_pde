@@ -1,9 +1,12 @@
-
+int p1points = 0;
+int p2points =0;
 void setup(){
  size(1280,720);
 }
 
 void draw(){
+
+
    background(60);
    fill(255);
   drawp1rectangle();
@@ -23,6 +26,9 @@ void draw(){
   p1bouncestraight();
   p1bouncedown();
   p1bounceup();
+  p1ballreset();
+  p2ballreset();
+  winnerpoints();
 }
 
 class P1paddle{
@@ -39,6 +45,6 @@ void centerline(){
 }
 }
 //TO DO:
-//TEXT for points
-//TEXT for game over + Winner
-//ball bounce off paddles at angles too
+//TEXT for Winner at 11 points
+//multiple keypress
+// print the rules

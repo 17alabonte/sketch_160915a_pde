@@ -6,17 +6,17 @@ void drawp1rectangle(){
 void movep1rectangle(){
 
    if(keyPressed&&key == 'w'){
-   h-=1;
+   h-=2;
  }
  
  if(keyPressed&&key == 's'){
-   h+=1;
+   h+=2;
  }
  if(keyPressed&&key == 'a'){
-   g-=1;
+   g-=2;
  }
  if(keyPressed&&key == 'd'){
-   g+=1;
+   g+=2;
  }
 }
 void p1rectanglelimits(){

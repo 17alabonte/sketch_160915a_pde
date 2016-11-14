@@ -6,18 +6,18 @@ void drawp2rectangle(){
 //rect(1260,310,20,100)
 void movep2rectangle(){
    if(keyPressed&&key == '8'){
-   paddleyloc-=1;
+   paddleyloc-=2;
  }
  
  if(keyPressed&&key == '5'){
-   paddleyloc+=1;
+   paddleyloc+=2;
   
  }
  if(keyPressed&&key == '4'){
-   paddlexloc-=1;
+   paddlexloc-=2;
  }
  if(keyPressed&&key == '6'){
-   paddlexloc+=1;
+   paddlexloc+=2;
  }
 }
 void p2rectanglelimits(){
