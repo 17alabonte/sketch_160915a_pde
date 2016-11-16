@@ -39,7 +39,7 @@ void p1rectanglelimits(){
 void p1bouncestraight(){
  if (ballycord >= h+35){
  if (ballycord <= h+65){ 
-   if (ballxcord == g+20){
+   if (ballxcord == g+25){
   ballxdirection = -ballxdirection;
   
   }
@@ -49,7 +49,7 @@ void p1bouncestraight(){
  void p1bouncedown(){
  if (ballycord >= h+65){
  if (ballycord <= h+100){ 
-   if (ballxcord == g+20){
+   if (ballxcord == g+25){
     ballxdirection = -ballxdirection;
     ballydirection = ballydirection +1;
     
@@ -62,7 +62,7 @@ void p1bouncestraight(){
   void p1bounceup(){
  if (ballycord >= h){
  if (ballycord <= h+35){ 
-   if (ballxcord == g+20){
+   if (ballxcord == g+25){
   ballxdirection = -ballxdirection;
   ballydirection =ballydirection -1;
   }

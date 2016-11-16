@@ -1,3 +1,4 @@
+ 
 int p1points = 0;
 int p2points =0;
 void setup(){
@@ -5,10 +6,26 @@ void setup(){
 }
 
 void draw(){
-
+println("Rules:");
+println("The ball heads to the right paddle on the first round and goes to the winner after that");
+println("If the ball is on your opponents side of the field do not touch your controls");
+println("You have to stop moving before the ball hits your paddle to push the ball");
+println("The winner is the first to 11 points");
+println("");
+println("Controls:");
+println("W = up");
+println("A = left");
+println("S = down");
+println("D = right");
+println("");
+println("8 = up");
+println("4 = left");
+println("5 = down");
+println("6 = right");
 
    background(60);
    fill(255);
+  
   drawp1rectangle();
   drawp2rectangle();
   movep1rectangle();

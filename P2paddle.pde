@@ -3,7 +3,7 @@ int paddlexloc= 1260;
 void drawp2rectangle(){
   rect(paddlexloc,paddleyloc,20,100);
 }
-//rect(1260,310,20,100)
+
 void movep2rectangle(){
    if(keyPressed&&key == '8'){
    paddleyloc-=2;
@@ -39,7 +39,7 @@ void p2rectanglelimits(){
  
    if (ballycord >= paddleyloc+35){ 
       if (ballycord <= paddleyloc+65){
-     if (ballxcord == paddlexloc-20){
+     if (ballxcord == paddlexloc-5){
        
    ballxdirection = -ballxdirection;
      }
@@ -50,7 +50,7 @@ void p2rectanglelimits(){
 
   if (ballycord <= paddleyloc+35){
    if (ballycord >= paddleyloc){ 
-     if (ballxcord == paddlexloc-20){
+     if (ballxcord == paddlexloc-5){
        
    ballxdirection = -ballxdirection;
    ballydirection =ballydirection -1;
@@ -62,7 +62,7 @@ void p2rectanglelimits(){
 
   if (ballycord <= paddleyloc+100){
    if (ballycord >= paddleyloc+65){ 
-     if (ballxcord == paddlexloc-20){
+     if (ballxcord == paddlexloc-5){
        
    ballxdirection = -ballxdirection;
    ballydirection = ballydirection +1;
